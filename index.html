@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <title>API Spotify</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Spotify Search</h2>
+            <p>輸入關鍵字，使用Spotify API搜尋相關的歌曲。顯示搜尋結果，並可播放該歌曲約30秒。也可暫停</p>
+          <input type="text" id="search-input" placeholder="Search for a song">
+          <button id="search-button">Search</button>
+          <div id="results"></div>
+        </div>
+        </div>
+
+        <h2>Spotify Top Tracks</h2>
+        <div id="topResults"></div>
+        
+    <script type="module" src="token.js"></script>
+    <script type="module" src="search.js"></script>
+    <script src="popular.js"></script>
+
+</body>
+</html>
