@@ -1,6 +1,6 @@
 const clientId = 'ZDE4NjAzZTk0NjRlNDBjMmJjZDEzOTUwYzE2ZDVkMTA=';
 const clientSecret = 'YWY4ZjllNjk1OGQ1NDdmOGJmNDhiYjZlNGZmY2JmMGI=';
-let accessToken = 'BQAXUX7rAPGw-vqZ9AkmJQc2YHojSRnaHxoqG_SuAiCAXkaSbP3VKbLSUo-3iCo7TM_H-uGauysjNVSXjrOsd3AJQwH-KL5eKAS8jZQMsdvXdHfol3g';
+let accessToken = 'BQDjBT5EOqz2ybr06EV8zw4td-iYOY8C9IsscKqH9tdBqeXAWIRtwU1j_4AaItRI89g0oYF1k4moPDlIxS04zLTfoQJe3a9sRC0TM74wnQMtVE-Ep0U';
 
 function searchTracks(query) {
     axios.get(`https://api.spotify.com/v1/search?q=${query}&type=track`, {
