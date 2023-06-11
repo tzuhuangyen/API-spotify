@@ -1,8 +1,13 @@
-const clientId = 'ZDE4NjAzZTk0NjRlNDBjMmJjZDEzOTUwYzE2ZDVkMTA';
-const clientSecret = 'YWY4ZjllNjk1OGQ1NDdmOGJmNDhiYjZlNGZmY2JmMGI';
-let accessToken = 'BQDJFkgcBE5-38inyhF3cPqfSCM7J2Pc5BbZiy22bnd4xhVeDj5Ofmqut4v5KDFgn9aNOpVrJcfjdzEoLcYCgw_BU91kpJemmed07on4HEli_Q5Et1s';
-// import axios from './node_modules/axios/dist/axios.min.js';
+//引入 dotenv 套件的方式
+require("dotenv").config();
+//console.log(process.env.weather_API_Key);
+const spotifyID=process.env.clientId;
+const spotifySecret=process.env.clientSecret;
 
+console.log(spotifyID);
+console.log(spotifySecret);
+let accessToken = 'BQDJFkgcBE5-38inyhF3cPqfSCM7J2Pc5BbZiy22bnd4xhVeDj5Ofmqut4v5KDFgn9aNOpVrJcfjdzEoLcYCgw_BU91kpJemmed07on4HEli_Q5Et1s';
+// 
 
  function searchTracks(query) {
     axios.get(`https://api.spotify.com/v1/search?q=${query}&type=track`, {

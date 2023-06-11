@@ -1,8 +1,10 @@
-const APIremote = (function() {
-    
-  const clientId = 'ZDE4NjAzZTk0NjRlNDBjMmJjZDEzOTUwYzE2ZDVkMTA';
-  const clientSecret = ' YWY4ZjllNjk1OGQ1NDdmOGJmNDhiYjZlNGZmY2JmMGI';
+//引入 dotenv 套件的方式
+require("dotenv").config();
+//console.log(process.env.weather_API_Key);
+const spotifyID=process.env.clientId;
+const spotifySecret=process.env.clientSecret;
 
+const APIremote = (function() {
   // private methods
   const _getToken = async () => {
 
